@@ -14,8 +14,8 @@ import org.springframework.stereotype.Controller;
  */
 @SpringBootApplication
 @Controller
-@EnableZuulProxy
 @EnableResourceServer
+@EnableZuulProxy
 public class EdgeApplication {
 
     public static void main( String [] args ) {
