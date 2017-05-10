@@ -19,7 +19,7 @@ plugins {
 }
 
 group 'com.thecoffeine'
-version '$version'
+version "$version"
 
 apply plugin: 'java'
 apply plugin: 'idea'
