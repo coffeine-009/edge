@@ -3,6 +3,7 @@ package com.thecoffeine.edge;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
+import org.springframework.stereotype.Controller;
 
 /**
  * Edge server.
@@ -11,6 +12,7 @@ import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
  * @version 1.0
  */
 @SpringBootApplication
+@Controller
 @EnableZuulProxy
 public class EdgeApplication {
 
