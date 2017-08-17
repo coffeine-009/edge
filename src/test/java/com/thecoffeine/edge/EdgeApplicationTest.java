@@ -33,6 +33,6 @@ public class EdgeApplicationTest {
             get( "/info" )
                 .contentType( MediaType.APPLICATION_JSON_UTF8 )
         )
-            .andExpect( status().isOk() );
+            .andExpect( status().isFound() );
     }
 }
