@@ -33,6 +33,7 @@ pipeline {
         always {
             archive 'build/libs/**/*.jar'
             junit 'build/test-results/**/*.xml'
+            sh "docker rmi thecoffeine/edge registry.hub.docker.com/thecoffeine/edge"
         }
         success {
             slackSend channel: '#release',
