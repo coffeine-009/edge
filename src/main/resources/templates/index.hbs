@@ -1,0 +1,57 @@
+{{#> partials/layout }}
+  <div id="container">
+    <header id = "header" class = "navbar navbar-default hero">
+      {{> partials/Header }}
+    </header>
+
+    <section>
+      <!-- Main block -->
+    <div id = "content" class = "content">
+      <div class = "jumbotron">
+        <h1>{{i18n 'jumbotron-title' this bundle = "i18n/messages"}}</h1>
+        <p>{{i18n 'jumbotron-text' this bundle = "i18n/messages"}}</p>
+        <p>
+          <a
+              class = "btn btn-primary btn-lg"
+              href = "/security/signup"
+              role = "button"
+          >
+            {{i18n 'btn-sign-up' this bundle = "i18n/messages"}}
+          </a>
+        </p>
+      </div>
+
+      <div class = "container marketing">
+
+        <div class = "row featurette">
+          <div class = "col-md-7">
+            <h2 class = "featurette-heading">
+              {{i18n 'label-musical-notes' this bundle = "i18n/messages"}}.
+              <span class = "text-muted">{{i18n 'label-musical-notes-hint' this bundle = "i18n/messages"}}.</span>
+            </h2>
+            <p class = "lead">{{i18n 'text-musical-notes' this bundle = "i18n/messages"}} <a href="mailto:support@musician-virtuoso.com">support@musician-virtuoso.com</a></p>
+          </div>
+          <div class = "col-md-5">
+            <img class = "featurette-image img-responsive center-block"
+                 src = "/images/music-notes.jpg"
+                 alt = "Generic placeholder image" width = "500" height = "500">
+          </div>
+        </div>
+
+      </div>
+    </div>
+    </section>
+
+    <hr class="featurette-divider">
+
+    <footer id = "footer">
+      {{> partials/Footer }}
+    </footer>
+
+    {{!-- Container for modal windows --}}
+    <div id = "modal-container" class = "modal-container">
+    <div class = "underlayout"></div>
+    <div id = "modal-container-content" class = "modal-container-content"></div>
+  </div>
+  </div>
+{{/partials/layout}}
