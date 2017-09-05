@@ -78,6 +78,9 @@ dependencies {
     compile("org.springframework.cloud:spring-cloud-starter-oauth2")
     compile("org.springframework.cloud:spring-cloud-starter-security")
 
+    compile 'com.github.jknack:handlebars:4.0.1'
+    compile 'com.github.jknack:handlebars-springmvc:4.0.6'
+
     testCompile('org.springframework.boot:spring-boot-starter-test')
 }
 
