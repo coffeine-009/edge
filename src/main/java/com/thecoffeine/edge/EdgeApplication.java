@@ -31,7 +31,7 @@ public class EdgeApplication extends WebSecurityConfigurerAdapter {
         http
             .logout().and()
             .authorizeRequests()
-            .antMatchers( "/", "/api/music/songs/*", "/login" ).permitAll()
+            .antMatchers( "/", "/music/songs/*", "/api/music/songs/*", "/login" ).permitAll()
             .anyRequest().authenticated()
             .and()
             .csrf()
