@@ -32,10 +32,7 @@ public class EdgeApplication extends WebSecurityConfigurerAdapter {
             .logout().and()
             .authorizeRequests()
             .antMatchers( "/", "/music/songs/*", "/api/music/songs/*", "/login" ).permitAll()
-            .anyRequest().authenticated()
-            .and()
-            .csrf()
-            .csrfTokenRepository( CookieCsrfTokenRepository.withHttpOnlyFalse());
+            .anyRequest().authenticated();
         // @formatter:on
     }
 }
